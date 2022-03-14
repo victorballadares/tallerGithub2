@@ -1,20 +1,26 @@
 //Script para el formulario en colaboracion
 
-let datos = [];
+//let datos = {};
+let datos =[];
 
-function validarForm(evento){
-    evento.preventDefaul();
+
+function validarForm(event){
+    event.preventDefault();
     let useR = document.querySelector('.user').value;
     let password = document.querySelector('.pass').value;
 
-    console.log(useR)
-
+   datos.push(useR);
+   datos.push(password);
+   console.log(datos);
+   
 }
-validarForm();
-
-enviarForm1.addEventListener('click',validate);
 
 //Guardar datos en un fichero
+document.querySelector('.enviarForm1').addEventListener('click',validarForm);
+
+
+
+
 
 
 
