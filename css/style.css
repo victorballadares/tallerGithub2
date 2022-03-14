@@ -1,23 +1,23 @@
-body {
-  width: 100%;
-  height: 100vh;
-  background-color: #7e7f9a;
-  display: flex;
-  justify-content: center;
-}
-#form1 {
-  width: 260px;
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  margin: auto;
-  text-align: center;
-  background-color: #97a7b3;
-  align-items: center;
-  border-radius: 10px;
-  padding: 20px 0px;
-}
 
+
+body{
+      height:100vh;
+      background-color:#7E7F9A;
+      display:flex;
+      justify-content: center;
+}
+#form1{
+    width: 260px;
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    margin: auto;
+    text-align: center;
+    background-color:#97A7B3;
+    align-items: center;
+    border-radius: 10px;
+    padding:20px 0px
+}
 .title {
   font-size: 25px;
   font-family: "Righteous", cursive;
@@ -55,4 +55,11 @@ body {
   font-size: 15px;
   font-family: "Righteous", cursive;
   color: white;
+}
+@media only screen and (min-width: 768px){
+    #form1{
+        width: 350px;
+        padding:20px 0px
+        
+    }   
 }
